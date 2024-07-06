@@ -1,0 +1,152 @@
+.technology-body{
+    background-image: url(../../images/technology-hero-bg-img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.site-header {
+    padding: 40px 0  0 55px;
+    margin: 0 auto;
+    max-width: 1385px;
+}
+.space {
+    @include display($items:center,$space:space-between,$gap:0);
+}
+.space__logo-link {
+    display: inline-block;
+}
+.space__list {
+    position: relative;
+    @include display($items:center,$space:center,$gap:48px);
+    width: 830px;
+    padding: 38px 0;
+    background-color: rgba(255, 255, 255, 0.04);
+    text-align: center;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -413px;
+        margin: auto 0;
+        width: 443px;
+        height: 1px;
+        background-color: #383E47;
+    }
+}
+
+.space__link {
+    @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:$white-color);
+    position: relative;
+    letter-spacing: 2.7px;
+    font-family: 'Barlow Condensed';
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -38px;
+        background-color: $white-color;
+        transition: all 0.2s linear;
+        opacity: 0;
+    }
+    &:hover::before{
+        opacity: 1;
+    }
+    }
+
+.technology__hero-section {
+    padding: 76px 0 214px 0;
+    background-image: url(../../images/technology-hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.technology__hero-title-wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.technology__hero-title-number {
+    opacity: 0.25;
+    @include textStyle($FW:700,$FS:28px,$LH:34px,$CASE:uppercase,$MB:0,$CLR:$white-color);
+    font-family: 'Barlow';
+}
+
+.technology__hero-title {
+    @include textStyle($FW:700,$FS:28px,$LH:34px,$CASE:uppercase,$MB:0,$CLR:$white-color);
+    font-family: 'Barlow';
+}   
+
+.technology__hero-content-wrapper {
+    margin-top: 137px;
+    width: 630px;
+    @include display($items:start,$space:space-between,$gap:80px);
+}
+
+.technology__hero-number {
+    @include display($items:center,$space:space-between,$gap:32px); 
+}
+
+.technology__hero-number-list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+}
+
+.technology__hero-item-first {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.technology__hero-item {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.technology__hero-number-link-first{
+    position: absolute;
+    top: 22px;
+    right: 32px;
+    @include textStyle($FW:400,$FS:32px,$LH:37px,$CASE:uppercase,$MB:0,$CLR:rgb(11, 13, 23));
+    font-family: Bellefair;
+}
+
+.technology__hero-number-link {
+    position: absolute;
+    top: 22px;
+    right: 32px;
+    @include textStyle($FW:400,$FS:32px,$LH:37px,$CASE:uppercase,$MB:0,$CLR:$text-color);
+    font-family: Bellefair;
+}
+
+.technology__hero-content-text-first {
+    @include textStyle($FW:400,$FS:16px,$LH:19px,$CASE:uppercase,$MB:0,$CLR:rgb(208, 214, 249));
+    font-family: 'Barlow';
+}
+
+.technology__hero-content-title {
+    margin: 11px 0 17px 0;
+    @include textStyle($FW:400,$FS:56px,$LH:64px,$CASE:uppercase,$MB:0,$CLR:rgb(208, 214, 249));
+    font-family: 'Barlow';
+}
+
+.technology__hero-content-text {
+    width: 444px;
+    margin: 11px 0 17px 0;
+    @include textStyle($FW:400,$FS:18px,$LH:32px,$CASE:0,$MB:0,$CLR:rgb(208, 214, 249));
+    font-family: 'Barlow';
+}
+
